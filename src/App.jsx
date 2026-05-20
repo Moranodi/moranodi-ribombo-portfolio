@@ -1,23 +1,35 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ProjectsPage from "./pages/ProjectsPage";
-import AchievementsPage from "./pages/AchievementsPage";
-import ContactPage from "./pages/ContactPage";
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
+import About from "./components/AboutPage.jsx";
+import Projects from "./components/Projects.jsx";
+import Achievements from "./components/AchievementsPage.jsx";
+import Contact from "./components/ContactPage.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="bg-slate-50 selection:bg-primary/30">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/achievements" element={<AchievementsPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-    </BrowserRouter>
+      <main>
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="projects" className="py-20 bg-white">
+          <Projects />
+        </section>
+        <section id="achievements" className="py-20">
+          <Achievements />
+        </section>
+        <section id="about" className="py-20">
+          <About />
+        </section>
+        <section id="contact" className="py-20 bg-white">
+          <Contact />
+        </section>
+      </main>
+      <footer className="py-10 text-center text-slate-500 border-t border-slate-200">
+        <p>© 2026 Moranodi Ribombo. All rights reserved.</p>
+      </footer>
+    </div>
   );
 }
 

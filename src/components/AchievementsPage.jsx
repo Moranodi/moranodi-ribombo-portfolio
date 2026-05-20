@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import awardWebsiteImg from "../assets/Best Website Application.jpeg";
 import awardSystemImg from "../assets/Best Overall System.jpeg";
 import backendDevImg from "../assets/Backend Dev.jpeg";
@@ -98,43 +97,45 @@ function AchievementsPage() {
                 <h2 className="text-2xl font-semibold text-primary">
                   Proof & Gallery
                 </h2>
-                <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                  {proofImages.map((image) => (
-                    <button
-                      key={image.title}
-                      type="button"
-                      onClick={() => setSelectedImage(image)}
-                      className="group rounded-3xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:border-primary hover:shadow-md"
-                    >
-                      <img
-                        src={image.src}
-                        alt={image.title}
-                        className="h-48 w-full rounded-3xl object-cover transition duration-300 group-hover:scale-[1.02]"
-                      />
-                      <p className="mt-4 font-semibold text-slate-900">
-                        {image.title}
-                      </p>
-                      <p className="mt-2 text-sm text-slate-600">
-                        {image.caption}
-                      </p>
-                    </button>
-                  ))}
+                <div className="mt-3 max-h-[400px] overflow-y-auto pr-2">
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {proofImages.map((image) => (
+                      <button
+                        key={image.title}
+                        type="button"
+                        onClick={() => setSelectedImage(image)}
+                        className="group rounded-3xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:border-primary hover:shadow-md"
+                      >
+                        <img
+                          src={image.src}
+                          alt={image.title}
+                          className="h-48 w-full rounded-3xl object-cover transition duration-300 group-hover:scale-[1.02]"
+                        />
+                        <p className="mt-4 font-semibold text-slate-900">
+                          {image.title}
+                        </p>
+                        <p className="mt-2 text-sm text-slate-600">
+                          {image.caption}
+                        </p>
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-wrap justify-center gap-4 text-center">
-              <Link
-                to="/"
+              <a
+                href="#home"
                 className="inline-flex rounded-2xl bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2c6ea4]"
               >
                 Back to Home
-              </Link>
-              <Link
-                to="/projects"
+              </a>
+              <a
+                href="#projects"
                 className="inline-flex rounded-2xl border border-slate-200 bg-slate-100 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-300 hover:bg-slate-200"
               >
                 See Projects
-              </Link>
+              </a>
             </div>
           </div>
         </section>

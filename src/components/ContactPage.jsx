@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 function ContactPage() {
   const [formState, setFormState] = useState({
@@ -114,7 +117,8 @@ function ContactPage() {
               href="mailto:morokzar@gmail.com"
               className="rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-slate-200"
             >
-              📧 Email
+              <FaEnvelope className="inline-block mr-2" />
+              Email
             </a>
             <a
               href="https://github.com/moranodi"
@@ -122,7 +126,8 @@ function ContactPage() {
               rel="noreferrer"
               className="rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-slate-200"
             >
-              💻 GitHub
+              <FaGithub className="inline-block mr-2" />
+              GitHub
             </a>
             <a
               href="https://linkedin.com/in/moranodi-ribombo-8b5905370"
@@ -130,7 +135,8 @@ function ContactPage() {
               rel="noreferrer"
               className="rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-slate-200"
             >
-              🔗 LinkedIn
+              <FaLinkedin className="inline-block mr-2" />
+              LinkedIn
             </a>
           </div>
         </section>
