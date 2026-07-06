@@ -48,8 +48,8 @@ function HomePage() {
                   View Achievements
                 </a>
                 <a
-                  href="/Moranodi Ribombo CV2026.pdf"
-                  download
+                  href={`${import.meta.env.BASE_URL}Moranodi-Ribombo-CV2026.pdf`}
+                  download="Moranodi-Ribombo-CV2026.pdf"
                   className="inline-flex rounded-2xl border border-slate-200 bg-slate-100 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-300 hover:bg-slate-200"
                 >
                   Download CV

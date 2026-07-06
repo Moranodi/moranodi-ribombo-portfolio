@@ -2,31 +2,31 @@ import moranodiImg from "../assets/moranodi.jpg";
 
 function Hero() {
   return (
-    <section className="mx-auto max-w-7xl px-4 pt-20 pb-10 sm:px-6 lg:px-8">
-      <div className="grid gap-12 lg:grid-cols-[320px_1fr] items-center">
-        <div className="flex flex-col items-center text-center bg-white p-8 rounded-3xl shadow-soft">
+    <section className="mx-auto max-w-7xl px-4 pb-10 pt-10 sm:px-6 lg:px-8 lg:pt-20">
+      <div className="grid items-center gap-8 lg:grid-cols-[320px_1fr] lg:gap-12">
+        <div className="flex flex-col items-center rounded-3xl bg-white p-6 text-center shadow-soft sm:p-8">
           <img
             src={moranodiImg}
             alt="Moranodi Ribombo"
-            className="h-48 w-48 rounded-full border-8 border-primary object-cover shadow-lg"
+            className="h-40 w-40 rounded-full border-8 border-primary object-cover shadow-lg sm:h-48 sm:w-48"
           />
-          <h1 className="mt-6 text-2xl font-bold text-slate-950">
+          <h1 className="mt-6 text-2xl font-bold text-slate-950 sm:text-[1.7rem]">
             Moranodi Mduduzi Ribombo
           </h1>
-          <p className="text-primary font-medium">Software Developer</p>
+          <p className="font-medium text-primary">Software Developer</p>
         </div>
 
-        <div className="space-y-6">
-          <h2 className="text-5xl font-bold text-slate-950 leading-tight">
+        <div className="space-y-6 text-center lg:text-left">
+          <h2 className="text-3xl font-bold leading-tight text-slate-950 sm:text-4xl lg:text-5xl">
             Building <span className="text-primary">Scalable</span> Digital
             Solutions.
           </h2>
-          <p className="max-w-2xl text-lg text-slate-600 leading-relaxed">
+          <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg lg:mx-0">
             Computer Science undergraduate with hands-on experience in
             full-stack development. Passionate about creating reliable backend
             systems and intuitive web applications.
           </p>
-          <div className="mt-10 flex flex-wrap justify-center gap-3 text-sm font-medium text-slate-700">
+          <div className="flex flex-wrap justify-center gap-3 text-sm font-medium text-slate-700 lg:justify-start">
             <span className="rounded-full bg-slate-100 px-4 py-2">
               Computer Science Undergraduate
             </span>
@@ -43,17 +43,17 @@ function Hero() {
               Problem Solving
             </span>
           </div>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <a
               href="#projects"
-              className="rounded-2xl bg-primary px-8 py-4 text-white font-semibold hover:bg-primary/90 transition"
+              className="inline-flex w-full justify-center rounded-2xl bg-primary px-6 py-4 text-sm font-semibold text-white transition hover:bg-primary/90 sm:w-auto"
             >
               View My Work
             </a>
             <a
-              href="/Moranodi Ribombo CV2026.pdf"
-              download
-              className="rounded-2xl border border-slate-200 bg-white px-8 py-4 font-semibold hover:bg-slate-50 transition"
+              href={`${import.meta.env.BASE_URL}Moranodi-Ribombo-CV2026.pdf`}
+              download="Moranodi-Ribombo-CV2026.pdf"
+              className="inline-flex w-full justify-center rounded-2xl border border-slate-200 bg-white px-6 py-4 text-sm font-semibold transition hover:bg-slate-50 sm:w-auto"
             >
               Download CV
             </a>
