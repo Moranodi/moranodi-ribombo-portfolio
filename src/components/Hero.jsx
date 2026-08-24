@@ -51,8 +51,8 @@ function Hero() {
               View My Work
             </a>
             <a
-              href={`${import.meta.env.BASE_URL}Moranodi-Ribombo-CV2026.pdf`}
-              download="Moranodi-Ribombo-CV2026.pdf"
+              href="/Moranodi Ribombo CV2026.pdf"
+              download
               className="inline-flex w-full justify-center rounded-2xl border border-slate-200 bg-white px-6 py-4 text-sm font-semibold transition hover:bg-slate-50 sm:w-auto"
             >
               Download CV
