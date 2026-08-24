@@ -29,10 +29,10 @@ function HomePage() {
                 </p>
               </div>
               <p className="text-base leading-7 text-slate-600">
-                A Computer Science undergraduate with hands-on experience in
-                building web applications and backend systems. I'm passionate
-                about creating scalable, reliable solutions and continuously
-                growing my skills in modern software development.
+                A Computer Science Graduate with hands-on experience in building
+                web applications and backend systems. I'm passionate about
+                creating scalable, reliable solutions and continuously growing
+                my skills in modern software development.
               </p>
               <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <a
@@ -48,8 +48,8 @@ function HomePage() {
                   View Achievements
                 </a>
                 <a
-                  href={`${import.meta.env.BASE_URL}Moranodi-Ribombo-CV2026.pdf`}
-                  download="Moranodi-Ribombo-CV2026.pdf"
+                  href={`${import.meta.env.BASE_URL}Moranodi Ribombo CV2026.pdf`}
+                  download="Moranodi Ribombo CV2026.pdf"
                   className="inline-flex rounded-2xl border border-slate-200 bg-slate-100 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-300 hover:bg-slate-200"
                 >
                   Download CV
